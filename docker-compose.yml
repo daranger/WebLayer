@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Наш бронебойный Redis
+  redis:
+    image: redis:7.2-alpine
+    container_name: sitemanager_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: always
+
+  # База данных MySQL
+  db:
+    image: mysql:8.0
+    container_name: sitemanager_mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: panel
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+
+volumes:
+  redis_data:
+  mysql_data:

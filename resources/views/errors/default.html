@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hold on a moment...</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Мягкий, теплый серо-бежевый фон вместо холодного белого */
+            background-color: #f1f5f9;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 3rem 2rem;
+            max-width: 500px;
+            width: 90%;
+            /* Приглушенный матовый белый, который "гасит" яркость */
+            background: #bfd0e5;
+            border-radius: 24px;
+
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* Шестеренки в приглушенных матовых тонах */
+        .icon-wrapper {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .gear {
+            position: absolute;
+            border: 8px solid #64748b; /* Спокойный slate-цвет */
+            border-radius: 50%;
+            border-top-color: transparent;
+        }
+
+        .gear.big {
+            width: 80px;
+            height: 80px;
+            top: 10px;
+            left: 10px;
+            animation: spin 4s linear infinite;
+        }
+
+        .gear.small {
+            width: 50px;
+            height: 50px;
+            bottom: 15px;
+            right: 15px;
+            border-color: #94a3b8; /* Чуть светлее */
+            border-bottom-color: transparent;
+            animation: spin-reverse 3s linear infinite;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            /* Неглубокий графитовый цвет для кнопки */
+            background-color: #475569;
+            color: #ffffff;
+            padding: 0.9rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(71, 85, 107, 0.15);
+        }
+
+        .btn:hover {
+            background-color: #334155;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 15px rgba(71, 85, 107, 0.25);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes spin-reverse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(-360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon-wrapper">
+        <div class="gear big"></div>
+        <div class="gear small"></div>
+    </div>
+
+    <h1>Just a moment!</h1>
+    <p>We're performing some quick maintenance to improve your experience. Please try again in about <b>5 minutes</b> — we'll be back online shortly!</p>
+
+    <button onclick="window.location.reload();" class="btn">Refresh Page</button>
+</div>
+
+</body>
+</html>
