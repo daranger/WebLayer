@@ -49,7 +49,7 @@ A self-hosted web panel for managing Nginx sites, databases, SSL certificates, c
 ## Installation
 
 ```bash
-wget https://raw.githubusercontent.com/daranger/sitemanager-ce/main/install.sh
+wget https://raw.githubusercontent.com/daranger/WebLayer/main/install.sh
 sh install.sh
 ```
 
