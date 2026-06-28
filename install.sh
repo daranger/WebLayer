@@ -176,7 +176,7 @@ mkdir -p /var/www/workspaces/www
 
 # ССЫЛКА НА ИСХОДНИКИ (измените на свой репозиторий или ZIP-архив)
 # Мы используем переданный GitHub PAT токен для доступа к приватному репозиторию
-REPO_URL="https://github.com/daranger/sitemanager-ce.git"
+REPO_URL="https://github.com/daranger/WebLayer.git"
 ZIP_URL=""
 
 if [ -n "$REPO_URL" ]; then
