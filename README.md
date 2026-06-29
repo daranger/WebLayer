@@ -8,7 +8,8 @@ A self-hosted web panel for managing Nginx sites, databases, SSL certificates, c
 
 ![File Manager](https://raw.githubusercontent.com/daranger/WebLayer/main/public/assets/sc/3.png)
 
-![PHP](https://img.shields.io/badge/PHP-8.1%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![OS](https://img.shields.io/badge/OS-Ubuntu%2022.04%20%2F%2024.04-orange)
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![OS](https://img.shields.io/badge/OS-Ubuntu%2022.04%20%2F%2024.04-orange) ![Tested](https://img.shields.io/badge/Tested%20on-Ubuntu%2026.04-success)
+
 
 ---
 
