@@ -46,7 +46,7 @@ A self-hosted web panel for managing Nginx sites, databases, SSL certificates, c
 
 ## Requirements
 
-- Ubuntu 22.04 / 24.04 or Debian 11/12
+- Ubuntu 22.04 / 24.04 / 26.04 or Debian 11/12
 - 1 GB RAM minimum
 - 5 GB free disk space
 - Root access
