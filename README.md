@@ -2,6 +2,12 @@
 
 A self-hosted web panel for managing Nginx sites, databases, SSL certificates, cron jobs, and system services on Ubuntu/Debian servers. Built on a custom PHP micro-framework with no heavy dependencies.
 
+![Dashboard](https://raw.githubusercontent.com/daranger/WebLayer/main/public/assets/sc/1.png)
+
+![Sites](https://raw.githubusercontent.com/daranger/WebLayer/main/public/assets/sc/2.png)
+
+![File Manager](https://raw.githubusercontent.com/daranger/WebLayer/main/public/assets/sc/3.png)
+
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![OS](https://img.shields.io/badge/OS-Ubuntu%2022.04%20%2F%2024.04-orange)
 
 ---
